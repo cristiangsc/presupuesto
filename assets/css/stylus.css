@@ -1,0 +1,131 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.cards {
+    display: block;
+    margin: 20px;
+}
+
+.card-ingresos {
+    display: grid;
+    background-color: rgb(240, 247, 237);
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-calcular {
+    padding: 5px;
+    width: 8em;
+    color: green;
+    background-color: rgb(240, 247, 237);
+    border-radius: 5px;
+    border: 1px solid green;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.btn-calcular button[disabled=disabled],
+button:disabled {
+    cursor: not-allowed;
+    background-color: rgb(129, 133, 127);
+}
+
+.btn-calcular:hover {
+    background-color: rgb(58, 143, 9);
+    color: white;
+}
+
+.card-egresos {
+    display: grid;
+    background-color: rgb(247, 195, 195);
+    border: 2px double red;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.btn-gasto {
+    padding: 8px;
+    width: 8em;
+    color: white;
+    border: thick double rgb(247, 195, 195);
+    background-color: rgb(224, 61, 61);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn-gasto:hover {
+    background-color: rgb(182, 21, 21);
+}
+
+.card-ingresos input {
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid lightgrey;
+    background-color: rgb(240, 247, 237);
+}
+
+.card-ingresos input:focus {
+    outline: none;
+    border-color: lightgrey;
+}
+
+.card-egresos input {
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid rgb(224, 172, 172);
+    background-color: rgb(247, 195, 195);
+}
+
+.card-egresos input:focus {
+    outline: none;
+    border-color: rgb(207, 150, 150);
+}
+
+.gastos-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgb(224, 221, 221);
+}
+
+.totales {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    margin: 5px;
+}
+
+.resultados {
+    display: grid;
+    gap: 30px;
+}
+
+.trash {
+    cursor: pointer;
+    color: blue;
+}

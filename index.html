@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/112e4a9f0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/stylus.css">
+    <title>Presupuesto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="cards">
+            <h2>PRESUPUESTO APP</h2>
+            <div class="card-ingresos">
+                <h4>Ingresa tu Presupuesto</h4>
+                <input type="number" name="presupuesto" id="monto-presupuesto">
+                <button class="btn-calcular" disabled>Calcular</button>
+            </div>
+            <div class="card-egresos">
+                <h4>Ingrese el Nombre del Gasto</h4>
+                <input type="text" name="gasto" id="tipo-gasto">
+                <h4>Ingrese la Cantidad del Gasto</h4>
+                <input type="number" name="totalgasto" id="monto-gasto">
+                <button class="btn-gasto">Añadir Gasto</button>
+            </div>
+
+        </div>
+        <div class="resultados">
+            <div class="totales">
+                <div>
+                    <h5>PRESUPUESTO</h5>
+                    <h5 id="presupuesto"></h5>
+                </div>
+                <div>
+                    <h5>GASTOS</h5>
+                    <h5 id="gastos"></h5>
+                </div>
+                <div>
+                    <h5>SALDO</h5>
+                    <h5 id="saldo"></h5>
+                </div>
+            </div>
+            <div class="gastos-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>GASTO</th>
+                            <th>VALOR</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="./assets/js/jquery-3.6.4.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
